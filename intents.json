@@ -1,0 +1,470 @@
+{"intents": [
+        {"tag": "lời_chào",
+         "patterns": [ "xin chào", "hi", "." , "hello"],
+         "responses": ["chào mừng bạn đến với cổng thông tin tuyển sinh của trường Đại học công nghiệp tphcm. Bạn có thắc mắc gì về thông tin tuyển sinh có thể trao đổi với chúng tôi." ],
+         "context": [""]
+        },
+        {"tag": "tuyển_sinh",
+         "patterns": [ "tuyển sinh","thông tin tuyển sinh", "phương thức tuyển sinh", "Cách tuyển sinh", "các phương thức xét tuyển" , "trường có những phương thức xét tuyển", "phương thức tuyển sinh IUH"],
+         "responses": ["Trường có 4 phương thức tuyển sinh. cụ thể như sau:\na) Xét tuyển thẳng và Ưu tiên xét tuyển thẳng đối với học sinh giỏi cấp tỉnh/thành phố, học sinh đạt giải kỳ thi Olympic ;Học sinh có học lực 3 năm lớp 10,11,12 xếp loại giỏi; Học sinh trường chuyên, lớp chuyên; Học sinh có Chứng chỉ IELTS từ 5.0 trở lên hoặc các Chứng chỉ quốc tế khác tương đương trong thời gian còn hiệu lực tính đến ngày 29/08/2022.\nb) Xét tuyển sử dụng kết quả học tập THPT năm lớp 12, ngưỡng nhận hồ sơ là tổng điểm 3 môn trong tổ hợp xét tuyển tối thiểu bằng 21.00 điểm. Riêng ngành Dược học, ngưỡng nhận hồ sơ là tổng điểm 3 môn trong tổ hợp xét tuyển tối thiểu bằng 24.00 điểm và có học lực năm lớp 12 xếp loại giỏi.\nc) Xét tuyển sử dụng kết quả kỳ thi tốt nghiệp THPT năm 2022. \nd) Xét tuyển sử dụng kết quả kỳ thi đánh giá năng lực do Đại học Quốc gia TP.HCM tổ chức năm 2022." ],
+         "context": [""]
+        },
+         {"tag": "lệ_phí_đăng_ký_nguyện_vọng",
+         "patterns": ["lệ phí đăng ký nguyện vọng", "lệ phí đăng ký", "đăng ký nguyện vọng cần lệ phí"],
+         "responses": ["Mỗi nguyện vọng đăng ký là 30,000 VNĐ/nguyện vọng"],
+         "context": [""]
+        },
+        {"tag": "điểm _ưu_tiên_xét_tuyển_khu_vực",
+         "patterns": ["điểm ưu tiên xét tuyển khu vực", "điểm cộng xét tuyển khu vực", "điểm ưu tiên khu vực"],
+         "responses": ["-Khu vực 1 được cộng ưu tiên là 0.75 điểm.\n-Khu vực 2 được cộng ưu tiên là 0.5 điểm.\n-Khu vực 3 được cộng ưu tiên là 0.25 điểm."],
+         "context": [""]
+        },
+        {"tag": "điểm _ưu_tiên_xét_tuyển_đối_tượng",
+         "patterns": ["điểm ưu tiên xét tuyển đối tượng", "điểm cộng xét tuyển đối tượng", "điểm ưu tiên đối tượng"],
+         "responses": ["-Nhóm 1 được cộng ưu tiên là 2 điểm.\n-Nhóm 2 được cộng ưu tiên là 1 điểm."],
+         "context": [""]
+        },
+        {"tag": "điểm_xét_tuyển_thi_THPT_IUH_không_đậu",
+         "patterns": ["điểm thi THPT xét tuyển không đậu IUH", "xét tuyển bằng điểm thi không đậu trường IUH"],
+         "responses": ["-Nếu không đậu vào trường IUH có thể lấy điểm thi đó xét tuyển bên phân hiệu Quảng Ngãi IQH"],
+         "context": [""]
+        },
+        {"tag": "điều_kiện_xét_tuyển_học_bạ",
+         "patterns": ["điều kiện xét tuyển bằng phương thức học bạ","điều kiện xét tuyển học bạ","xét tuyển bằng học bạ"],
+         "responses": ["-Để xét tuyển bằng phương thức học bạ cần đảm bảo các điều kiện:\n-Đăng ký trong thời gian khi ra thông báo\n-Điểm THPT năm lớp 12 thỏa mãn điều kiện điểm xét tuyển ngành\n-Được chứng nhận bảng điểm tại cơ quan hành chính gần nhất\n-Có bằng tốt nghiệp tạm thời chứng nhận đạt tốt nghiệp."],
+         "context": [""]
+        },
+         {"tag": "thay_đổi_nguyện_vọng",
+         "patterns": ["thay đổi nguyện vọng","điều chỉnh nguyện vọng"],
+         "responses": ["-Thí sinh có thể điều chỉnh nguyện vọng trong thời gian Bộ công bố thời gian chính thức bằng hình thức trực tuyến, có hiệu lực khi chưa có điểm thi THPT ,sau thời gian công bố điểm thi THPT thì sẽ xét tuyển theo các nguyện vọng đăng ký gần nhất của thí sinh."],
+         "context": [""]
+        },
+        {"tag": "khi_có_điểm_thi_trúng_nguyện_vọng",
+         "patterns": ["trúng nguyện vọng khi điểm điểm thi","nguyện vọng trúng tuyển có điểm thi THPT"],
+         "responses": ["-TH1: Nếu thí sinh đăng ký 1 nguyện vọng thì khi trúng tuyển thí sinh được tuyển vào nguyện vọng đó\n- Nếu trường hợp thí sinh đăng ký quá nhiều nguyện vọng thì nguyện vọng trúng tuyển sẽ ưu tiên từ cao đến thấp."],
+         "context": [""]
+        },
+        {"tag": "sinh_viên_bổ_sung_giấy_tờ_gì_sau_khi_nhập_học",
+         "patterns": ["sinh viên bổ sung giấy tờ","bổ sung giấy tờ sau khi nhập học"],
+         "responses": ["-Sau khi nhập học đủ 1 năm,sinh viên vui lòng nộp giấy tốt nghiệp bản sao tốt nghiệp THPT chính thức để hoàn thành hồ sơ"],
+         "context": [""]
+        },
+        {"tag": "Chuẩn_bị_ngày_nhập_học",
+         "patterns": ["ngày nhập học cần chuẩn bị gì","ngày nhập học"],
+         "responses": ["-Sau khi biết điểm THPT trúng tuyển sinh viên cần chuẩn bị: 1 bộ hồ sơ, 3 tấm ảnh 3x4, giấy báo nhập học, tiền đóng học phí kỳ 1 năm 1"],
+         "context": [""]
+        },
+        {"tag": "đối_tượng",
+         "patterns": ["đối tượng tuyển sinh", "đối tượng", "điều kiện để xét tuyển theo đối tượng" , "điều kiện tuyển sinh"],
+         "responses": ["sinh viên đã tốt nghiệp trung học phổ thông"],
+         "context": [""]
+        },
+        {"tag": "thủ_tục_xét_tuyển_phương_thức_1",
+         "patterns": ["thủ tục xét tuyển phương thức 1", "thủ tục xét tuyển thẳng"],
+         "responses": ["Hồ sơ gồm có:\n-Phiếu đăng ký xét tuyển (theo mẫu trên website của Trường);\n-01 Bản photocopy Học bạ THPT (có công chứng);\n-Giấy tờ minh chứng cho diện xét tuyển thẳng (bản photocopy có công chứng);\n-01 Bản photocopy Chứng minh nhân dân hoặc Thẻ căn cước công dân;\n-01 Bản sao Giấy khai sinh;\n-Lệ phí xét tuyển: 30.000 đồng/nguyện vọng;"],
+         "context": [""]
+        },
+        {"tag": "thủ_tục_xét_tuyển_phương_thức_2",
+         "patterns": ["thủ tục xét tuyển phương thức 2", " thủ tục xét tuyển kết quả học tập  thpt lớp 12" , "xét tuyển bằng học bạ cần chuẩn bị những gì"],
+         "responses": ["Hồ sơ:\n-Phiếu đăng ký xét tuyển;\n-01 Bản photocopy Học bạ THPT (có công chứng);\n-01 Bản photocopy Bằng tốt nghiệp THPT (có công chứng) đối với thí sinh tốt nghiệp trước năm 2022;\n-thí sinh tốt nghiệp THPT năm 2022 sẽ bổ sung Giấy chứng nhận Tốt nghiệp tạm thời khi làm thủ tục nhập học;\n-01 Bản photocopy Chứng minh nhân dân hoặc Thẻ căn cước công dân;\n-01 Bản sao Giấy khai sinh;\n-Các giấy tờ minh chứng (bản photocopy có công chứng) thí sinh được hưởng cộng điểm ưu tiên diện chính sách, điểm ưu tiên khu vực (nếu có);\n-Lệ phí xét tuyển: 30.000 đồng/nguyện vọng;"],
+         "context": [""]
+        },
+        {"tag": "thủ_tục_xét_tuyển_phương_thức_3",
+         "patterns": ["thủ tục xét tuyển phương thức 3", " thủ tục xét tuyển sử dụng kết quả kỳ thi tốt nghiệp"],
+         "responses": ["Hồ sơ, lệ phí đăng ký xét tuyển theo quy định của Bộ Giáo dục và Đào tạo, với mã tuyển sinh của Trường là IUH."],
+         "context": [""]
+        },
+        {"tag": "thủ_tục_xét_tuyển_phương_thức_4",
+         "patterns": ["thủ tục xét tuyển phương thức 4", " thủ tục xét tuyển Sử dụng kết quả kỳ thi đánh giá năng lực của Đại học Quốc gia TP.HCM năm 2022"],
+         "responses": ["Hồ sơ gồm có:\n-Phiếu đăng ký xét tuyển theo mẫu quy định của Nhà trường;\n-01 Bản photocopy Học bạ THPT (có công chứng);\n-01 Bản photocopy Bằng tốt nghiệp THPT (có công chứng) đối với thí sinh tốt nghiệp trước năm 2022;\n-thí sinh tốt nghiệp THPT năm 2022 sẽ bổ sung Giấy chứng nhận Tốt nghiệp tạm thời khi làm thủ tục nhập học;\n-01 Phiếu điểm thi đánh giá năng lực năm 2022 (có công chứng);\n-01 Bản photocopy Chứng minh nhân dân hoặc Thẻ căn cước công dân;\n-01 Bản sao Giấy khai sinh;\n-Các giấy tờ minh chứng (bản photocopy có công chứng) thí sinh được hưởng cộng điểm ưu tiên diện chính sách, điểm ưu tiên khu vực (nếu có);\n-Lệ phí xét tuyển: 30.000 đồng/nguyện vọng;"],
+         "context": [""]
+        },
+        {"tag": "đia_điểm_nộp_hồ_sơ",
+         "patterns": ["địa điểm nộp hồ sơ", "địa điểm nộp"],
+         "responses": ["Địa điểm nộp hồ sơ: Nộp trực tiếp tại Trường hoặc Nộp qua đường bưu điện. "],
+         "context": [""]
+        },
+       
+        
+        {"tag": "thời_gian_nộp_hồ_sơ",
+         "patterns": ["thời gian nộp hồ sơ", "thời gian nộp"],
+         "responses": ["-Đối với diện Ưu tiên xét tuyển thẳng: 15/04/2022 đến hết 16g30 ngày 12/07/2022.\n-Đối với phương thức xét tuyển sử dụng kết quả học tập THPT năm lớp 12: từ 15/04/2022 đến hết 16g30 ngày 12/07/2022.\n-Đối với phương thức xét tuyển sử dụng kết quả thi tốt nghiệp THPT năm 2022: Thời gian theo quy định của Bộ Giáo dục và Đào tạo.\n-Đối với phương thức xét tuyển sử dụng kết quả kỳ thi đánh giá năng lực năm 2022: 15/04/2022 đến hết 16h30 ngày 12/07/2022. "],
+         "context": [""]
+        },
+        {"tag": "căn_cứ_xét_tuyển",
+         "patterns": ["căn cứ xét tuyển"],
+         "responses": ["Xét tổng điểm của điểm 3 môn thuộc tổ hợp đăng ký xét tuyển, điểm ưu tiên khu vực và điểm ưu tiên diện chính sách.\nTrong trường hợp có nhiều thí sinh có cùng tổng điểm dẫn đến vượt chỉ tiêu, Hội đồng Tuyển sinh sẽ xét thêm tiêu chí phụ là điểm thi môn chính trong tổ hợp xét tuyển"],
+         "context": [""]
+        },
+        {"tag": "phân_hiệu_tphcm",
+         "patterns": ["tphcm", "thành phố hồ chí minh", "phân hiệu tphcm"],
+         "responses": ["Số 12 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, thành phố Hồ Chí Minh, điện thoại: (028) 3895 5858; (028) 3985 1932; (028) 3985 1917; Email: tuyensinh@iuh.edu.vn; Website: www.tuyensinh.iuh.edu.vn"],
+         "context": [""]
+        },
+        {"tag": "phân_hiệu_quảng_ngãi",
+         "patterns": ["qn", "quảng ngãi", "cơ sở quảng ngãi"],
+         "responses": ["Số 938 Quang Trung, thành phố Quảng Ngãi, tỉnh Quảng Ngãi, điện thoại: (0255) 625 0075; (0255) 222 2135; 0916 222 135." ],
+         "context": [""]
+        },
+        {"tag": "cơ_sở",
+         "patterns": ["Trường có bao nhiêu cơ sở", "cơ sở", "trường có những cơ sở nào", "phân hiệu"],
+         "responses": ["Hiện nay trường có 3 cơ sở: Phân hiệu Thành phố Hồ Chí Minh, Phân hiệu Quảng Ngãi và Phân hiệu ở thanh hóa"],
+         "context": [""]
+        },
+        {"tag": "ngành_học",
+         "patterns": ["Trường có những ngành học nào", "ngành đào tạo", "đào tạo","ngành"],
+         "responses": ["Năm 2022 trường IUH tuyển sinh 36 ngành/ nhóm ngành. 8 ngành trương trình 2+2 liên kết quốc tế với hoa kì. 2 ngành quốc tế chất lượng cao"],
+         "context": [""]
+        },
+        {"tag": "tổ_hợp",
+         "patterns": ["các tổ hợp 3 môn xét tuyển","các tổ hợp"],
+         "responses": ["- Khối A00: Toán, Vật lý, Hóa học\n- Khối A01: Toán, Tiếng Anh, Vật Lý\n- Khối B00: Toán, Hóa học, Sinh học\n- Khối D01: Toán, Ngữ Văn, Tiếng Anh\n- Khối D07: Toán, Tiếng Anh, Hóa học\n- Khối C00: Ngữ văn, Lịch sử, Địa lý\n- Khối C01: Toán, Ngữ văn, Vật lý\n- Khối C02: Toán, Ngữ văn, Hóa học\n- Khối C08: Ngữ văn, Hóa học, Sinh học\n- Khối D14: Ngữ văn, Tiếng Anh, Lịch sử\n- Khối D15: Ngữ văn, Tiếng Anh, Địa lý\n- Khối D90: Toán, Tiếng Anh, Khoa học tự nhiên\n- Khối D96: Toán, Tiếng Anh, Khoa học xã hội"],
+         "context": [""]
+        },
+        {"tag": "điểm_trúng_tuyển_điểm thi THPT",
+         "patterns": ["điểm trúng tuyển","điểm"],
+         "responses": ["-Điểm trúng tuyển phương thức sử dụng kết quả thi THPTQG 2022:\n-Quản trị kinh doanh:25.5đ.\n-Marketing:26đ.\n-Nhóm ngành Quản trị dịch vụ du lịch và lữ hành:19đ.\n-Kinh doanh quốc tế:27.\n-Thương mại điện tử:25.5đ.\n-Tài chính ngân hàng:24đ.\n-Kế toán:25đ.\n-Kiểm toán:25đ.\n-Luật kinh tế:27đ.\n-Luật quốc tế:25đ.\n-Công nghệ kỹ thuật cơ khí:22đ.\n-Công nghệ chế tạo máy:22đ.\n-Công nghệ kỹ thuật cơ điện tử:22.5đ.\n-Công nghệ kỹ thuật ô tô:24.5đ.\n-Công nghệ kỹ thuật nhiệt:19.5đ.\n-Công nghệ kỹ thuật điều khiển và tự động hóa :23.5đ.\n-Công nghệ kỹ thuật điện, điện tử :22.25đ.\n-Công nghệ kỹ thuật điện tử - viễn thông :21.5đ.\n-IOT và Trí tuệ nhân tạo ứng dụng:22.50đ.\n-Dược học:27.50đ.\n-Nhóm ngành Công nghệ kỹ thuật hóa học:24.00đ.\n-Công nghệ thực phẩm:27.50đ.\n-Công nghệ sinh học:27.00đ.\n-Đảm bảo chất lượng và an toàn thực phẩm:24.00đ.\n-Dinh dưỡng và khoa học thực phẩm:24.00đ.\n-Thiết kế thời trang:25.50đ.\n-Công nghệ dệt, may:24.00đ.\n-Kỹ thuật xây dựng:26.00đ.\n-Kỹ thuật xây dựng công trình giao thông:24.00đ.\n-Nhóm ngành Quản lý tài nguyên và môi trường:23.00đ.\n-Nhóm ngành Quản lý đất đai và Kinh tế tài nguyên :23.00đ.\n-Ngôn ngữ Anh :26.25đ"],
+         "context": [""]
+        },{"tag": "điểm_trúng_tuyển_học bạ THPT",
+        "patterns": ["điểm trúng tuyển","điểm"],
+        "responses": ["-Điểm trúng tuyển phương thức sử dụng kết qủa học bạ THPT 2022:\n-Quản trị kinh doanh:28đ.\n-Marketing:28.5đ.\n-Nhóm ngành Quản trị dịch vụ du lịch và lữ hành:26.25đ.\n-Kinh doanh quốc tế:28.5.\n-Thương mại điện tử:27.25đ.\n-Tài chính ngân hàng:27.25đ.\n-Kế toán:27.75đ.\n-Kiểm toán:27.25đ.\n-Luật kinh tế:28.00đ.\n-Luật quốc tế:27.00đ.\n-Công nghệ kỹ thuật cơ khí:26.50đ.\n-Công nghệ chế tạo máy:26.00đ.\n-Công nghệ kỹ thuật cơ điện tử:27.00đ.\n-Công nghệ kỹ thuật ô tô:27.50đ.\n-Công nghệ kỹ thuật nhiệt:24.25đ.\n-Công nghệ kỹ thuật điều khiển và tự động hóa :27.00đ.\n-Công nghệ kỹ thuật điện, điện tử :27.00đ.\n-Công nghệ kỹ thuật điện tử - viễn thông :25.75đ.\n-IOT và Trí tuệ nhân tạo ứng dụng:26.50đ.\n-Dược học:27.50đ.\n-Nhóm ngành Công nghệ kỹ thuật hóa học:24.00đ.\n-Công nghệ thực phẩm:27.50đ.\n-Công nghệ sinh học:27.00đ.\n-Đảm bảo chất lượng và an toàn thực phẩm:24.00đ.\n-Dinh dưỡng và khoa học thực phẩm:24.00đ.\n-Thiết kế thời trang:25.50đ.\n-Công nghệ dệt, may:24.00đ.\n-Kỹ thuật xây dựng:26.00đ.\n-Kỹ thuật xây dựng công trình giao thông:24.00đ.\n-Nhóm ngành Quản lý tài nguyên và môi trường:23.00đ.\n-Nhóm ngành Quản lý đất đai và Kinh tế tài nguyên :23.00đ.\n-Ngôn ngữ Anh :26.25đ"],
+        "context": [""]
+       },
+        {"tag": "điện_điện_tử",
+         "patterns": ["công nghệ kỹ thuật điện, điện tử", "năng lượng tái tạo", "điện tử", " tổ hợp xét tuyển ngành công nghệ kỹ thuật điện, điện tử", "tổ hợp xét tuyển ngành năng lượng tái tạo", "tổ hợp xét tuyển ngành điện tử"],
+         "responses": ["Công nghệ kỹ thuật điện, điện tử gồm 02 chuyên ngành: Công nghệ kỹ thuật điện, điện tử; Năng lượng tái tạo.\nTuyển sinh cả CLC và đại trà, tổ hợp xét tuyển bao gồm: A00, A01, C01, D90"],
+         "context": [""]
+        },
+        {"tag": "điểm_điện_điện_tử",
+         "patterns": ["điểm trúng tuyển công nghệ kỹ thuật điện, điện tử","điểm công nghệ kỹ thuật điện, điện tử"],
+         "responses": ["- Điểm trúng tuyển xét học bạ:Hệ đại trà: 26,5đ, Hệ CLC: 24đ .\n- Điểm trúng tuyển thi THPT quốc gia: Hệ đại trà: 22,25đ, Hệ CLC: 21đ.\n- Điểm trúng tuyển thi THPT quốc gia: 760."],
+         "context": [""]
+        },
+        {"tag": "tự_động_hóa",
+         "patterns": ["tự động hóa", "nhóm ngành tự động hóa", "hóa tự động"," tổ hợp xét tuyển tự động hóa", "tổ hợp xét tuyển nhóm ngành tự động hóa"],
+         "responses": ["Nhóm ngành tự động hóa gồm 02 chuyên ngành: Công nghệ kỹ thuật điều khiển và tự động hóa; Robot và hệ thống điều khiển thông minh.\nTuyển sinh cả CLC và đại trà, tổ hợp xét tuyển bao gồm: A00, A01, C01, D90"],
+         "context": [""]
+        },
+        {"tag": "điểm_tự_động_hóa",
+         "patterns": ["điểm trúng tuyển ngành tự động hóa", "điểm trúng tuyển nhóm ngành tự động hóa"],
+         "responses": ["- Điểm trúng tuyển xét học bạ:Hệ đại trà: 27đ, Hệ CLC: 24,75đ .\n- Điểm trúng tuyển thi THPT quốc gia: Hệ đại trà: 23,5đ, Hệ CLC: 22đ.\n- Điểm trúng tuyển thi THPT quốc gia: 800."],
+         "context": [""]
+        },
+        {"tag": "kỹ_thuật_điện_tử",
+         "patterns": ["ngành kỹ thuật điện tử, viễn thông", "điện tử công nghiệp", "điện tử viễn thông"," tổ hợp xét tuyển kỹ thuật điện tử, viễn thông"],
+         "responses": ["Công nghệ kỹ thuật điện tử - viễn thông gồm 02 chuyên ngành: Điện tử công nghiệp; Kỹ thuật viễn thông.\nTuyển sinh cả CLC và đại trà, tổ hợp xét tuyển bao gồm: A00, A01, C01, D90"],
+         "context": [""]
+        },
+        {"tag": "điểm_kỹ_thuật_điện_tử",
+         "patterns": ["điểm trúng tuyển ngành kỹ thuật điện tử, viễn thông"],
+         "responses": ["- Điểm trúng tuyển xét học bạ:Hệ đại trà: 25,75đ, Hệ CLC: 24đ .\n- Điểm trúng tuyển thi THPT quốc gia: Hệ đại trà: 22,25đ, Hệ CLC: 19đ.\n- Điểm trúng tuyển thi THPT quốc gia: 660."],
+         "context": [""]
+        },
+        {"tag": "kỹ_thuật_máy tính",
+         "patterns": ["ngành kỹ thuật máy tính", "công nghệ kỹ thuật máy tính"," tổ hợp xét tuyển ngành công nghệ kỹ thuật máy tính"],
+         "responses": ["Công nghệ kỹ thuật máy tính: Tuyển sinh cả CLC và đại trà, tổ hợp xét tuyển bao gồm: A00, A01, C01, D90"],
+         "context": [""]
+        },
+        {"tag": "điểm_kỹ_thuật_máy tính",
+         "patterns": ["điểm trúng tuyển ngành kỹ thuật máy tính"],
+         "responses": ["- Điểm trúng tuyển xét học bạ:Hệ đại trà: 27đ, Hệ CLC: 25đ .\n- Điểm trúng tuyển thi THPT quốc gia: Hệ đại trà: 24đ, Hệ CLC: 22đ.\n- Điểm trúng tuyển thi THPT quốc gia: 800."],
+         "context": [""]
+        },
+        {"tag": "trí_tuệ_nhân_tạo_ứng_dụng",
+         "patterns": ["IOT và Trí tuệ nhân tạo ứng dụng", "Trí tuệ nhân tạo ứng dụng","tổ hợp xét tuyển ngành IOT và Trí tuệ nhân tạo ứng dụng"],
+         "responses": ["IOT và Trí tuệ nhân tạo ứng dụng: Tuyển sinh hệ đại trà, tổ hợp xét tuyển bao gồm: A00, A01, C01, D90"],
+         "context": [""]
+        },
+        {"tag": "điểm_trí_tuệ_nhân_tạo_ứng_dụng",
+         "patterns": ["điểm trúng tuyển ngành IOT và Trí tuệ nhân tạo ứng dụng"],
+         "responses": ["- Điểm trúng tuyển xét học bạ:Hệ đại trà: 26.5đ.\n- Điểm trúng tuyển thi THPT quốc gia: Hệ đại trà: 22.5đ.\n- Điểm trúng tuyển thi THPT quốc gia: 800."],
+         "context": [""]
+        },
+        {"tag": "cơ_khí",
+         "patterns": ["Công nghệ kỹ thuật cơ khí", "cơ khí"," tổ hợp xét tuyển ngành Công nghệ kỹ thuật cơ khí"],
+         "responses": ["IOT và Trí tuệ nhân tạo ứng dụng: Tuyển sinh hệ đại trà và CLC, tổ hợp xét tuyển bao gồm: A00, A01, C01, D90"],
+         "context": [""]
+        },
+        {"tag": "điểm_cơ_khí",
+         "patterns": ["điểm trúng tuyển ngành Công nghệ kỹ thuật cơ khí"],
+         "responses": ["- Điểm trúng tuyển xét học bạ:Hệ đại trà: 26.5đ, Hệ CLC: 25đ.\n- Điểm trúng tuyển thi THPT quốc gia: Hệ đại trà: 22đ, Hệ CLC: 20.5đ.\n- Điểm trúng tuyển thi THPT quốc gia: 750."],
+         "context": [""]
+        },
+        {"tag": "cơ_điện_tử",
+         "patterns": ["Công nghệ kỹ thuật cơ điện tử", "cơ điện tử"," tổ hợp xét tuyển ngành Công nghệ kỹ thuật cơ điện tử"],
+         "responses": ["Công nghệ kỹ thuật cơ điện tử: Tuyển sinh hệ đại trà và CLC, tổ hợp xét tuyển bao gồm: A00, A01, C01, D90"],
+         "context": [""]
+        },
+        {"tag": "điểm_cơ_điện_tử",
+         "patterns": ["điểm trúng tuyển ngành Công nghệ kỹ thuật cơ điện tử"],
+         "responses": ["- Điểm trúng tuyển xét học bạ:Hệ đại trà: 27đ, Hệ CLC: 24.75đ.\n- Điểm trúng tuyển thi THPT quốc gia: Hệ đại trà: 22.5đ, Hệ CLC: 21đ.\n- Điểm trúng tuyển thi THPT quốc gia: 780."],
+         "context": [""]
+        },
+        {"tag": "chế_tạo_máy",
+         "patterns": ["Công nghệ chế tạo máy", "chế tạo máy"," tổ hợp xét tuyển ngành Công nghệ chế tạo máy"],
+         "responses": ["Công nghệ chế tạo máy: Tuyển sinh hệ đại trà và CLC, tổ hợp xét tuyển bao gồm: A00, A01, C01, D90"],
+         "context": [""]
+        },
+        {"tag": "điểm_chế_tạo_máy",
+         "patterns": ["điểm trúng tuyển ngành Công nghệ chế tạo máy"],
+         "responses": ["- Điểm trúng tuyển xét học bạ:Hệ đại trà: 26đ, Hệ CLC: 24đ.\n- Điểm trúng tuyển thi THPT quốc gia: Hệ đại trà: 22đ, Hệ CLC: 20đ.\n- Điểm trúng tuyển thi THPT quốc gia: 700."],
+         "context": [""]
+        },
+        {"tag": "kỹ_thuật_ô_tô",
+         "patterns": ["Công nghệ kỹ thuật ô tô", "ô tô"," tổ hợp xét tuyển ngành Công nghệ kỹ thuật ô tô"],
+         "responses": ["Công nghệ kỹ thuật ô tô: Tuyển sinh hệ đại trà và CLC, tổ hợp xét tuyển bao gồm: A00, A01, C01, D90"],
+         "context": [""]
+        },
+        {"tag": "điểm_kỹ_thuật_ô_tô",
+         "patterns": ["điểm trúng tuyển ngành Công nghệ kỹ thuật ô tô"],
+         "responses": ["- Điểm trúng tuyển xét học bạ:Hệ đại trà: 27.5đ, Hệ CLC: 26đ.\n- Điểm trúng tuyển thi THPT quốc gia: Hệ đại trà: 24.5đ, Hệ CLC: 22đ.\n- Điểm trúng tuyển thi THPT quốc gia: 800."],
+         "context": [""]
+        },
+        {"tag": "kỹ_thuật_nhiệt",
+         "patterns": ["Kỹ thuật xây dựng", "xây dựng"," tổ hợp xét tuyển ngành Kỹ thuật xây dựng"],
+         "responses": ["Kỹ thuật xây dựng: Tuyển sinh hệ đại trà và CLC, tổ hợp xét tuyển bao gồm: A00, A01, C01, D90"],
+         "context": [""]
+        },
+        {"tag": "điểm_kỹ_thuật_nhiệt",
+         "patterns": ["điểm trúng tuyển ngành Công nghệ kỹ thuật nhiệt"],
+         "responses": ["- Điểm trúng tuyển xét học bạ:Hệ đại trà: 24.25đ, Hệ CLC: 22đ.\n- Điểm trúng tuyển thi THPT quốc gia: Hệ đại trà: 19.5đ, Hệ CLC: 18.5đ.\n- Điểm trúng tuyển thi THPT quốc gia: 650."],
+         "context": [""]
+        },
+        {"tag": "kỹ_thuật_xây_dựng",
+         "patterns": ["Công nghệ kỹ thuật nhiệt", "nhiệt"," tổ hợp xét tuyển ngành Công nghệ kỹ thuật nhiệt"],
+         "responses": ["Công nghệ kỹ thuật nhiệt: Tuyển sinh hệ đại trà, tổ hợp xét tuyển bao gồm: A00, A01, C01, D90"],
+         "context": [""]
+        },
+        {"tag": "điểm_kỹ_thuật_xây dựng",
+         "patterns": ["điểm trúng tuyển ngành Công nghệ kỹ thuật xây dựng"],
+         "responses": ["- Điểm trúng tuyển xét học bạ:Hệ đại trà: 26đ.\n- Điểm trúng tuyển thi THPT quốc gia: Hệ đại trà: 19đ.\n- Điểm trúng tuyển thi THPT quốc gia: 700."],
+         "context": [""]
+        },
+        {"tag": "kỹ_thuật_công_trình_giao_thông",
+         "patterns": ["Kỹ thuật xây dựng công trình giao thông", "công trình giao thông"," tổ hợp xét tuyển ngành Kỹ thuật xây dựng công trình giao thông"],
+         "responses": ["Kỹ thuật xây dựng công trình giao thông: Tuyển sinh hệ đại trà, tổ hợp xét tuyển bao gồm: A00, A01, C01, D90"],
+         "context": [""]
+        },
+        {"tag": "điểm_kỹ_thuật_công_trình_giao_thông",
+         "patterns": ["điểm trúng tuyển ngành Công nghệ kỹ thuật công trình giao thông"],
+         "responses": ["- Điểm trúng tuyển xét học bạ:Hệ đại trà: 24đ.\n- Điểm trúng tuyển thi THPT quốc gia: Hệ đại trà: 19đ.\n- Điểm trúng tuyển thi THPT quốc gia: 650."],
+         "context": [""]
+        },
+        {"tag": "dệt_may",
+         "patterns": ["Công nghệ dệt, may", "dệt","may"," tổ hợp xét tuyển ngành Công nghệ dệt, may"],
+         "responses": ["Công nghệ dệt, may: Tuyển sinh hệ đại trà, tổ hợp xét tuyển bao gồm: A00, C01, D01, D90"],
+         "context": [""]
+        },
+        {"tag": "điểm_dệt may",
+         "patterns": ["điểm trúng tuyển ngành Công nghệ dệt may"],
+         "responses": ["- Điểm trúng tuyển xét học bạ:Hệ đại trà: 24đ.\n- Điểm trúng tuyển thi THPT quốc gia: Hệ đại trà: 19đ.\n- Điểm trúng tuyển thi THPT quốc gia: 650."],
+         "context": [""]
+        },
+        {"tag": "thiết_kế_thời_trang",
+         "patterns": ["Thiết kế thời trang", " thời trang"," tổ hợp xét tuyển Thiết kế thời trang"],
+         "responses": ["Công nghệ dệt, may: Tuyển sinh hệ đại trà, tổ hợp xét tuyển bao gồm: A00, C01, D01, D90"],
+         "context": [""]
+        },
+        {"tag": "điểm_thiết_kế_thời_trang",
+         "patterns": ["điểm trúng tuyển ngành Thiết kế thời trang"],
+         "responses": ["- Điểm trúng tuyển xét học bạ:Hệ đại trà: 25.5đ.\n- Điểm trúng tuyển thi THPT quốc gia: Hệ đại trà: 21.25đ.\n- Điểm trúng tuyển thi THPT quốc gia: 700."],
+         "context": [""]
+        },
+        {"tag": "công_nghệ_thông_tin",
+         "patterns": ["công nghệ thông tin", "cntt"," tổ hợp xét tuyển công nghệ thông tin"],
+         "responses": ["Nhóm ngành Công nghệ thông tin gồm 05 ngành và 01 chuyên ngành:\n-Công nghệ thông tin;\n-Kỹ thuật phần mềm;\n-Khoa học máy tính;\n-Hệ thống thông tin;\n-Khoa học dữ liệu và chuyên ngành Quản lý đô thị thông minh và bền vững:\n-Tuyển sinh hệ đại trà, tổ hợp xét tuyển bao gồm: A00, A01, D01, D90"],
+         "context": [""]
+        },
+        {"tag": "điểm_công_nghệ_thông_tin",
+         "patterns": ["điểm trúng tuyển ngành Công nghệ thông tin"],
+         "responses": ["- Điểm trúng tuyển xét học bạ:Hệ đại trà: 28đ.\n- Điểm trúng tuyển thi THPT quốc gia: Hệ đại trà: 26đ.\n- Điểm trúng tuyển thi THPT quốc gia: 850."],
+         "context": [""]
+        },
+        {"tag": "công_nghệ_thông_tin_CLC",
+         "patterns": ["công nghệ thông tin CLC", "cntt clc"," tổ hợp xét tuyển công nghệ thông tin CLC"],
+         "responses": ["Nhóm ngành Công nghệ thông tin gồm 04 chuyên ngành:\n-Công nghệ thông tin;\n-Kỹ thuật phần mềm;\n-Khoa học máy tính;\n-Hệ thống thông tin;\n-Tổ hợp xét tuyển bao gồm: A00, A01, D01, D90"],
+         "context": [""]
+        },
+        {"tag": "điểm_công_nghệ_thông_tin_CLC",
+         "patterns": ["điểm trúng tuyển ngành Công nghệ thông tin CLC"],
+         "responses": ["- Điểm trúng tuyển xét học bạ: Hệ CLC: 26.5đ.\n- Điểm trúng tuyển thi THPT quốc gia: Hệ CLC: 24.25đ.\n- Điểm trúng tuyển thi THPT quốc gia: 700."],
+         "context": [""]
+        },
+        {"tag": "dược_học",
+         "patterns": ["Dược học"," tổ hợp xét tuyển ngành Dược học"],
+         "responses": ["Dược học: Tuyển sinh hệ đại trà, tổ hợp xét tuyển bao gồm: A00, B00, D07, C08"],
+         "context": [""]
+        },
+        {"tag": "điểm_dược_học",
+         "patterns": ["điểm trúng tuyển ngành Dược học"],
+         "responses": ["- Điểm trúng tuyển xét học bạ:Hệ đại trà: 27.5đ, Hệ CLC: 24đ.\n- Điểm trúng tuyển thi THPT quốc gia: Hệ đại trà: 23đ.\n- Điểm trúng tuyển thi THPT quốc gia: 700."],
+         "context": [""]
+        },
+        {"tag": "công_nghệ_hóa_học",
+         "patterns": ["Công nghệ hóa học", "hóa học"," tổ hợp xét tuyển Công nghệ hóa học"],
+         "responses": ["Nhóm ngành Công nghệ hóa học gồm 02 ngành: Công nghệ kỹ thuật hóa học; Kỹ thuật hóa phân tích.Tuyển sinh hệ đại trà và CLC, tổ hợp xét tuyển bao gồm: A00, B00, D07, C02"],
+         "context": [""]
+        },
+        {"tag": "điểm_công_nghệ_hóa_học",
+         "patterns": ["điểm trúng tuyển ngành Công nghệ hóa học"],
+         "responses": ["- Điểm trúng tuyển xét học bạ:Hệ đại trà: 24đ, Hệ CLC: 22đ.\n- Điểm trúng tuyển thi THPT quốc gia: Hệ đại trà: 19đ, Hệ CLC: 18đ.\n- Điểm trúng tuyển thi THPT quốc gia: 700."],
+         "context": [""]
+        },
+        {"tag": "công_nghệ_thực_phẩm",
+         "patterns": ["Công nghệ thực phẩm"," tổ hợp xét tuyển Công nghệ thực phẩm"],
+         "responses": ["Công nghệ thực phẩm: Tuyển sinh hệ đại trà và CLC, tổ hợp xét tuyển bao gồm: A00, B00, D07, D90"],
+         "context": [""]
+        },
+        {"tag": "điểm_công_nghệ_thực_phẩm",
+         "patterns": ["điểm trúng tuyển ngành Công nghệ thực phẩm"],
+         "responses": ["- Điểm trúng tuyển xét học bạ:Hệ đại trà: 27.5đ, Hệ CLC: 23.5đ.\n- Điểm trúng tuyển thi THPT quốc gia: Hệ đại trà: 20đ, Hệ CLC: 19đ.\n- Điểm trúng tuyển thi THPT quốc gia: 700."],
+         "context": [""]
+        },
+        {"tag": "dinh_dưỡng_và_khoa_học_thực_phẩm",
+         "patterns": ["Dinh dưỡng và Khoa học thực phẩm","dinh dưỡng","tổ hợp xét tuyển Dinh dưỡng và Khoa học thực phẩm"],
+         "responses": ["Dinh dưỡng và Khoa học thực phẩm: Tuyển sinh hệ đại trà, tổ hợp xét tuyển bao gồm: A00, B00, D07, D90"],
+         "context": [""]
+        },
+        {"tag": "điểm_dinh_dưỡng_và_khoa_học_thực_phẩm",
+         "patterns": ["điểm trúng tuyển ngành Dinh dưỡng và khoa học thực phẩm"],
+         "responses": ["- Điểm trúng tuyển xét học bạ:Hệ đại trà: 24đ.\n- Điểm trúng tuyển thi THPT quốc gia: Hệ đại trà: 19đ.\n- Điểm trúng tuyển thi THPT quốc gia: 700."],
+         "context": [""]
+        },
+        {"tag": "an_toàn_thực_phẩm",
+         "patterns": ["Đảm bảo chất lượng và An toàn thực phẩm","tổ hợp xét tuyển Đảm bảo chất lượng và An toàn thực phẩm"],
+         "responses": ["Đảm bảo chất lượng và An toàn thực phẩm: Tuyển sinh hệ đại trà, tổ hợp xét tuyển bao gồm: A00, B00, D07, D90"],
+         "context": [""]
+        },
+        {"tag": "điểm_an_toàn_thực_phẩm",
+         "patterns": ["điểm trúng tuyển ngành Đảm bảo chất lượng và an toàn thực phẩm"],
+         "responses": ["- Điểm trúng tuyển xét học bạ:Hệ đại trà: 24đ.\n- Điểm trúng tuyển thi THPT quốc gia: Hệ đại trà: 19đ.\n- Điểm trúng tuyển thi THPT quốc gia: 700."],
+         "context": [""]
+        },
+        {"tag": "đất_đai_tài_nguyên",
+         "patterns": ["Quản lý đất đai và Kinh tế tài nguyên","tổ hợp xét tuyển Quản lý đất đai và Kinh tế tài nguyên"],
+         "responses": ["Nhóm ngành Quản lý đất đai và Kinh tế tài nguyên gồm 02 ngành: Quản lý đất đai; Kinh tế tài nguyên thiên nhiên.\n-Tuyển sinh hệ đại trà, tổ hợp xét tuyển bao gồm: A01, C01, D01, D96"],
+         "context": [""]
+        },
+        {"tag": "điểm_đất_đai_tài_nguyên",
+         "patterns": ["điểm trúng tuyển ngành Quản lý đất đai và Kinh tế tài nguyên"],
+         "responses": ["- Điểm trúng tuyển xét học bạ:Hệ đại trà: 23đ.\n- Điểm trúng tuyển thi THPT quốc gia: Hệ đại trà: 19đ.\n- Điểm trúng tuyển thi THPT quốc gia: 700."],
+         "context": [""]
+        },
+        {"tag": "công_nghệ_sinh_học",
+         "patterns": ["Công nghệ sinh học","tổ hợp xét tuyển Công nghệ sinh học"],
+         "responses": ["Nhóm ngành Công nghệ sinh học gồm 03 chuyên ngành:\n-Công nghệ sinh học y dược;\n-Công nghệ sinh học nông nghiệp;\n-Công nghệ sinh học thẩm mĩ.\n-Tuyển sinh hệ đại trà và CLC, tổ hợp xét tuyển bao gồm: A00, B00, D07, D90"],
+         "context": [""]
+        },
+        {"tag": "điểm_công_nghệ_sinh_học",
+         "patterns": ["điểm trúng tuyển ngành Công nghệ sinh học"],
+         "responses": ["- Điểm trúng tuyển xét học bạ:Hệ đại trà: 27đ, Hệ CLC: 22đ.\n- Điểm trúng tuyển thi THPT quốc gia: Hệ đại trà: 22.5đ, Hệ CLC: 20đ.\n- Điểm trúng tuyển thi THPT quốc gia: 700."],
+         "context": [""]
+        },
+        {"tag": "tài_nguyên_môi_trường",
+         "patterns": ["Quản lý tài nguyên môi trường","tổ hợp xét tuyển Quản lý tài nguyên môi trường"],
+         "responses": ["Nhóm ngành Quản lý tài nguyên môi trường gồm 02 ngành: Quản lý tài nguyên và môi trường; Công nghệ kỹ thuật môi trường.\n-Tuyển sinh hệ đại trà, tổ hợp xét tuyển bao gồm: B00, C02, D90, D96"],
+         "context": [""]
+        },
+        {"tag": "điểm_tài_nguyên_môi_trường",
+         "patterns": ["điểm trúng tuyển ngành Quản lý tài nguyên và môi trường"],
+         "responses": ["- Điểm trúng tuyển xét học bạ:Hệ đại trà: 23đ.\n- Điểm trúng tuyển thi THPT quốc gia: Hệ đại trà: 19đ.\n- Điểm trúng tuyển thi THPT quốc gia: 700."],
+         "context": [""]
+        },
+        {"tag": "kế_toán",
+         "patterns": ["Kế toán","tổ hợp xét tuyển Kế toán"],
+         "responses": ["Kế toán gồm 02 chuyên ngành: Kế toán; Thuế và kế toán.\n-Tuyển sinh hệ đại trà và CLC, tổ hợp xét tuyển bao gồm: A00, A01, D01, D90"],
+         "context": [""]
+        },
+        {"tag": "điểm_kế_toán",
+         "patterns": ["điểm trúng tuyển ngành Kế toán"],
+         "responses": ["- Điểm trúng tuyển xét học bạ:Hệ đại trà: 27.75đ, Hệ CLC: 25đ.\n- Điểm trúng tuyển thi THPT quốc gia: Hệ đại trà: 25đ, Hệ CLC: 22.5đ.\n- Điểm trúng tuyển thi THPT quốc gia: 700."],
+         "context": [""]
+        },
+        {"tag": "quản_trị_kinh_doanh",
+         "patterns": ["Quản trị kinh doanh","tổ hợp xét tuyển Quản trị kinh doanh"],
+         "responses": ["Quản trị kinh doanh gồm 03 chuyên ngành: Quản trị kinh doanh; Quản trị nguồn nhân lực; Logistics và Quản lý chuỗi cung ứng.\n-Tuyển sinh hệ đại trà và CLC, tổ hợp xét tuyển bao gồm: A00, A01, D01, D90"],
+         "context": [""]
+        },
+        {"tag": "điểm_quản_trị_kinh_doanh",
+         "patterns": ["điểm trúng tuyển ngành Quản trị kinh doanh"],
+         "responses": ["- Điểm trúng tuyển xét học bạ:Hệ đại trà: 28đ, Hệ CLC: 25.5đ.\n- Điểm trúng tuyển thi THPT quốc gia: Hệ đại trà: 25.5đ, Hệ CLC: 23đ.\n- Điểm trúng tuyển thi THPT quốc gia: 700."],
+         "context": [""]
+        },
+        {"tag": "marketing",
+         "patterns": ["marketing","tổ hợp xét tuyển marketing"],
+         "responses": ["Marketing: Tuyển sinh hệ đại trà và CLC, tổ hợp xét tuyển bao gồm: A00, A01, D01, D90"],
+         "context": [""]
+        },
+        {"tag": "điểm_marketing",
+         "patterns": ["điểm trúng tuyển ngành marketing"],
+         "responses": ["- Điểm trúng tuyển xét học bạ:Hệ đại trà: 28.5đ, Hệ CLC: 26đ.\n- Điểm trúng tuyển thi THPT quốc gia: Hệ đại trà: 26đ, Hệ CLC: 24đ.\n- Điểm trúng tuyển thi THPT quốc gia: 700."],
+         "context": [""]
+        },
+        {"tag": "Kinh_doanh_quốc_tế",
+         "patterns": ["Kinh doanh quốc tế","tổ hợp xét tuyển Kinh doanh quốc tế"],
+         "responses": ["Kinh doanh quốc tế: Tuyển sinh hệ đại trà và CLC, tổ hợp xét tuyển bao gồm: A00, A01, D01, D90"],
+         "context": [""]
+        },
+        {"tag": "điểm_Kinh_doanh_quốc_tế",
+         "patterns": ["điểm trúng tuyển ngành Kinh doanh quốc tế"],
+         "responses": ["- Điểm trúng tuyển xét học bạ:Hệ đại trà: 28.5đ, Hệ CLC: 26đ.\n- Điểm trúng tuyển thi THPT quốc gia: Hệ đại trà: 26đ, Hệ CLC: 23đ.\n- Điểm trúng tuyển thi THPT quốc gia: 700."],
+         "context": [""]
+        },
+        {"tag": "Thương_mại_điện_tử",
+         "patterns": ["Thương mại điện tử","tổ hợp xét tuyển Thương mại điện tử"],
+         "responses": ["Thương mại điện tử: Tuyển sinh hệ đại trà và CLC, tổ hợp xét tuyển bao gồm: A00, A01, D01, D90"],
+         "context": [""]
+        },
+        {"tag": "điểm_Thương_mại_điện_tử",
+         "patterns": ["điểm trúng tuyển ngành Thương mại điện tử"],
+         "responses": ["- Điểm trúng tuyển xét học bạ:Hệ đại trà: 27.25đ.\n- Điểm trúng tuyển thi THPT quốc gia: Hệ đại trà: 25.5đ.\n- Điểm trúng tuyển thi THPT quốc gia: 700."],
+         "context": [""]
+        },
+        {"tag": "Luật_Kinh_tế",
+         "patterns": ["Thương mại điện tử","tổ hợp xét tuyển Luật kinh tế"],
+         "responses": ["Luật kinh tế: Tuyển sinh hệ đại trà và CLC, tổ hợp xét tuyển bao gồm: A00, A01, D01, D90"],
+         "context": [""]
+        },
+        {"tag": "điểm_Luật_Kinh_tế",
+         "patterns": ["điểm trúng tuyển ngành Luật kinh tế"],
+         "responses": ["- Điểm trúng tuyển xét học bạ:Hệ đại trà: 28đ, Hệ CLC: 26.25đ.\n- Điểm trúng tuyển thi THPT quốc gia: Hệ đại trà: 27đ, Hệ CLC: 24đ.\n- Điểm trúng tuyển thi THPT quốc gia: 700."],
+         "context": [""]
+        },
+        {"tag": "Luật_quốc_tế",
+         "patterns": ["Thương mại điện tử","tổ hợp xét tuyển Luật quốc tế"],
+         "responses": ["Luật kinh tế: Tuyển sinh hệ đại trà và CLC, tổ hợp xét tuyển bao gồm: A00, A01, D01, D90"],
+         "context": [""]
+        },
+        {"tag": "điểm_Luật_quốc_tế",
+         "patterns": ["điểm trúng tuyển ngành Luật quốc tế"],
+         "responses": ["- Điểm trúng tuyển xét học bạ:Hệ đại trà: 27đ, Hệ CLC: 25đ.\n- Điểm trúng tuyển thi THPT quốc gia: Hệ đại trà: 25đ, Hệ CLC: 24đ.\n- Điểm trúng tuyển thi THPT quốc gia: 700."],
+         "context": [""]
+        },
+        {"tag": "Ngôn_ngữ_anh",
+         "patterns": ["Thương mại điện tử","tổ hợp xét tuyển Ngôn ngữ Anh"],
+         "responses": ["Ngôn ngữ Anh: Tuyển sinh hệ đại trà và CLC, tổ hợp xét tuyển bao gồm: A00, A01, D01, D90"],
+         "context": [""]
+        },
+        {"tag": "điểm_Ngôn_ngữ_anh",
+         "patterns": ["điểm trúng tuyển ngành Ngôn ngữ Anh"],
+         "responses": ["- Điểm trúng tuyển xét học bạ:Hệ đại trà: 27.75đ, Hệ CLC: 25đ.\n- Điểm trúng tuyển thi THPT quốc gia: Hệ đại trà: 22.25đ.\n- Điểm trúng tuyển thi THPT quốc gia: 700."],
+         "context": [""]
+        },
+        {"tag": "kiểm_toán",
+         "patterns": ["Kiểm toán","tổ hợp xét tuyển Kiểm toán"],
+         "responses": ["Kiểm toán: Tuyển sinh hệ đại trà và CLC, tổ hợp xét tuyển bao gồm: A00, A01, D01, D90"],
+         "context": [""]
+        },
+        {"tag": "điểm_kiểm_toán",
+         "patterns": ["điểm trúng tuyển ngành Kiểm toán"],
+         "responses": ["- Điểm trúng tuyển xét học bạ:Hệ đại trà: 27.75đ, Hệ CLC: 25đ.\n- Điểm trúng tuyển thi THPT quốc gia: Hệ đại trà: 25đ, Hệ CLC: 22.5đ.\n- Điểm trúng tuyển thi THPT quốc gia: 700."],
+         "context": [""]
+        },
+
+        {"tag": "cảm_ơn",
+         "patterns": ["cảm ơn", "tạm biệt"],
+         "responses": ["Hẹn gặp lại bạn ở trường nhé!"],
+         "context": [""]
+        }
+   ]
+}
